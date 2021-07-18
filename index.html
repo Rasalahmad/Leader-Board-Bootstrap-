@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leader Board</title>
+    <!-- css bootstrap link here -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- font awesome link here -->
+    <script src="https://kit.fontawesome.com/aa2be8b546.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #F3F1FF;
+        }
+        
+        .link {
+            color: white;
+            transition: .4s;
+            margin: 0 10px;
+        }
+        
+        .link:hover {
+            background-color: rgb(0, 0, 0, 0.2);
+            transform: scale(1.2);
+            border-radius: 15px;
+        }
+        
+        .container {
+            width: 870px;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        
+        .fa-clock {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- navbar start here -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#562EFF;">
+            <div class="container">
+                <img class="d-flex align-items-center" src="images/icons/logo.png" width="41px" height="51px" alt="">
+                <a class="navbar-brand ms-2" href="#">Idea</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                        <li class="nav-item link p-2">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item link p-2">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item link p-2">
+                            <a class="nav-link" href="#">Works</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="" href="#"><img src="images/players/player-1.png" width="51px" height="51px" alt=""></a>
+                        </li>
+
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end here -->
+    </header>
+    <main>
+        <!-- top player section start -->
+        <section class="container bg-white mt-3">
+            <h4 class="text-primary p-3">Top Players</h4>
+            <div class="row p-4">
+                <div class="col-lg-4 d-flex align-items-center mb-4">
+                    <img src="images/players/player-1.png" width="56px" height="56px" alt="">
+                    <h4 class="ms-2">John Smith</h4>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center mb-4">
+                    <img src="images/players/player-2.png" width="56px" height="56px" alt="">
+                    <h4 class="ms-2">Pro Rasel</h4>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center mb-4">
+                    <img src="images/players/player-3.png" width="56px" height="56px" alt="">
+                    <h4 class="ms-2">Abu Sufian</h4>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center mb-4">
+                    <img src="images/players/player-1.png" width="56px" height="56px" alt="">
+                    <h4 class="ms-2">John Smith</h4>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center mb-4">
+                    <img src="images/players/player-2.png" width="56px" height="56px" alt="">
+                    <h4 class="ms-2">Pro Rasel</h4>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center mb-4">
+                    <img src="images/players/player-3.png" width="56px" height="56px" alt="">
+                    <h4 class="ms-2">Abu Sufian</h4>
+                </div>
+            </div>
+            <hr>
+            <h4 class="text-primary p-3">Top Players</h4>
+            <div class="row p-4">
+                <div class="col-lg-6 d-flex">
+                    <img src="images/blogs/blog-1.png" width="177px" height="117px" alt="">
+                    <div class="ps-3">
+                        <h4>13 of My Favorite UI/UX Goodies</h4>
+                        <p>By <a href="">Danny Sapio</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex mt-3">
+                    <img src="images/blogs/blog-2.png" width="177px" height="117px" alt="">
+                    <div class="ps-3">
+                        <h4>UI cheat sheet: list vs grids</h4>
+                        <p>By <a href="">Tess Godd</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex mt-3">
+                    <img src="images/blogs/blog-3.png" width="177px" height="117px" alt="">
+                    <div class="ps-3">
+                        <h4>7 typography tips for interface design</h4>
+                        <p>By <a href="">Jeremiah Lam</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex mt-3">
+                    <img src="images/blogs/blog-4.png" width="177px" height="117px" alt="">
+                    <div class="ps-3">
+                        <h4>Your logo is copied
+                        </h4>
+                        <p>By <a href="">Ferdinand Vogler</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container bg-white mt-3 mb-5 p-3">
+            <h4 class="text-primary p-3">Latest Courses</h4>
+            <div class="row">
+                <div class="col-lg-4 shadow-sm pb-4 rounded-5">
+                    <img src="images/courses/course-1.png" class="card-img-top" alt="...">
+                    <div class="">
+                        <h4 class="">React - The Complete Guide 2021</h4>
+                        <p class="">Reed Krakoff.</p>
+                        <div>
+                            <div>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star" style="color:#F3F1FF;"></i>
+                                <span class="ms-2">4.5</span>
+                                <span class="p-2 ms-4 rounded-pill text-danger" style="background:#FFE4E8;"><i class="far fa-clock me-1"></i>01:30 hr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 shadow-sm pb-4 rounded-5">
+                    <img src="images/courses/course-2.png" class="card-img-top" alt="...">
+                    <div class="">
+                        <h4 class="">Powerpoint 2020 Master Powerpoint</h4>
+                        <p class="">Walter Scott</p>
+                        <div>
+                            <div>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star" style="color:#F3F1FF;"></i>
+                                <span class="ms-2">4.5</span>
+                                <span class="p-2 ms-4 rounded-pill text-danger" style="background:#FFE4E8;"><i class="far fa-clock me-1"></i>01:30 hr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 shadow-sm pb-4 rounded-5">
+                    <img src="images/courses/course-3.png" class="card-img-top" alt="">
+                    <div class="">
+                        <h4 class="">The Complete JavaScript Course 2022</h4>
+                        <p class="">Reed Krakoff.</p>
+                        <div>
+                            <div>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star" style="color:#F3F1FF;"></i>
+                                <span class="ms-2">4.5</span>
+                                <span class="p-2 ms-4 rounded-pill text-danger" style="background:#FFE4E8;"><i class="far fa-clock me-1"></i>01:30 hr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- js link here -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
